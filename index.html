@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>How Well Do You Know Me?</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="intro py-3 bg-primary text-center">
+      <div class="container">
+        <h2 class="text-white display-3 my-4">How Well Do You Know Me?</h2>
+      </div>
+    </div>
+
+    <!-- Result Section-->
+    <div class="result d-none py-4 bg-primary text-center">
+      <div class="container lead text-white">
+        <p>You <span class="display-4 p-4"></span> Know Soli!</p>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz py-4 bg-primary-subtle text-dark">
+      <div class="container">
+        <h2 class="my-5 text-primary">
+          Almost Personal Questions About Soli...
+        </h2>
+
+        <!-- Q1 -->
+        <form class="quiz-form">
+          <div class="my-5">
+            <p class="lead font-weight-normal">1. What color are my eyes?</p>
+            <div class="form-check form-control-plaintext my-2 text-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">black</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label">Brown</label>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. What is the weirdest thing that I'm into?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label">Raw Food</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label">Insects</label>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. I am more like which character of Friends series?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label">Chandler</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label">Monica</label>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. What time period would I choose to live in?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label">2040s</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">1970s</label>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. Which Hogwarts house am I sorted into?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="form-check-label">Gryffindor</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label">Ravenclaw</label>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. What size clothing do I wear?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="form-check-label">Small</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q6" value="B" />
+              <label class="form-check-label">Medium</label>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7. What would my dream job be?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="form-check-label">Designer</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q7" value="B" />
+              <label class="form-check-label">Developer</label>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8. Who was my first celebrity crush?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="form-check-label">Leonardo DiCaprio</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q8" value="B" />
+              <label class="form-check-label">Taylor Lautner</label>
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              9. If I had to choose a place to live, where would it be?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="form-check-label">A very modern place</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q9" value="B" />
+              <label class="form-check-label">Somewhere Around the Sea</label>
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10. Do I prefer to cook or eat out?
+            </p>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="form-check-label">Cook</label>
+            </div>
+            <div class="form-check my-2 text-50">
+              <input type="radio" name="q10" value="B" />
+              <label class="form-check-label">Eat Out</label>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" class="btn btn-lg btn-outline-primary" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
